@@ -13,7 +13,7 @@ When('Cargando el telefono {word}',(tel)=>{
 When('Cargando el email {word}',(email)=>{
     cy.txtV("#email", email,  300) 
 })
-When('Cargando la direccion {word}',(direccion)=>{
+When('Cargando la direccion {string}',(direccion)=>{
     cy.txtV("#direccion", direccion, 300) 
 })
 And('click en validar',()=>{

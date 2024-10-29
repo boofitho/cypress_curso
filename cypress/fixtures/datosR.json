@@ -1,0 +1,27 @@
+[
+    {
+        "NoCuenta": "10000000032",
+        "montoFisico":"4",
+        "Total":"4"
+    },
+    {
+        "NoCuenta": "10000000032",
+        "montoFisico":"5",
+        "Total":"5"
+    },
+    {
+        "NoCuenta": "10000000032",
+        "montoFisico":"10",
+        "Total":"10"
+    },
+    {
+        "NoCuenta": "10000000032",
+        "montoFisico":"20",
+        "Total":"20"
+    },
+    {
+        "NoCuenta": "10000000032",
+        "montoFisico":"15",
+        "Total":"15"
+    }
+]

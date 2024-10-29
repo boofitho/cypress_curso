@@ -27,7 +27,7 @@ module.exports = defineConfig({
 
   projectId: 'pqnydr',
   e2e: {
-    "specPattern": "**/*.feature",                  // <--- esta es la linea que hay que quitar o poner para poder ver o desver xD los archivos de cucumber 
+ //   "specPattern": "**/*.feature",                  // <--- esta es la linea que hay que quitar o poner para poder ver o desver xD los archivos de cucumber 
     setupNodeEvents(on, config) {
       // implement node event listeners here
       on('file:preprocessor', cucumber())

@@ -8,7 +8,7 @@
 #     When Cargando el apellido ronaldo
 #     When Cargando el telefono 3334444221
 #     When Cargando el email siiiuuuu@messi.com
-#     When Cargando la direccion direcion_mayor
+#     When Cargando la direccion 'barcelona mi casita'
 #     And click en validar
 #     Then click en limpiar
     
@@ -29,7 +29,7 @@
     
     Examples:
         |nombre|apellido|telefono|email|direccion|
-        |miguel|alonzo|1234567890|miguel@gmail.com|barcelon_mi_casita|
-        |leonel|messi|9874561235|meeeesi@gmail.com|miami_mi_casita|
-        |cristiano|ronaldo|4567891236|cristiano@gmail.com|arabia_mi_casita|
-        |neymar|jr|364565489|n@gmail.com|al_hilal_mi_casita|
+        |miguel|alonzo|1234567890|miguel@gmail.com|'barcelona mi casita'|
+        |leonel|messi|9874561235|meeeesi@gmail.com|'miami mi casita'|
+        |cristiano|ronaldo|4567891236|cristiano@gmail.com|'arabia mi casita'|
+        |neymar|jr|364565489|n@gmail.com|'al hilal mi casita'|

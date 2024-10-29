@@ -12,5 +12,31 @@ git commit -m "inicio del proyecto"                                    //agregam
 
 git commit -m "se agrego archivo comandos git.txt"                     //agregamos copia con etiqueta "se agrego archivo comandos git.txt" 
                                                                        //siempre hacer el git add .
-                                                                       
+
 got log                                                                //indica todo lo que se ha realizado
+
+git checkout -- .                                                      //recupera lo eliminado hasta el ultimo "git add ." y "git commit -m "texto"
+
+git add .\nombre de archivo.extension                                  //agrega el archivo .\nombre de archivo.extension    
+
+git add *.extension                                                    //agrega todos los archivos con la extensio indicada      
+
+git add .\carpeta\                                                     //agrega una carpeta
+
+git status     --- para ver los add sin commit que se han realizado
+
+git reset *.mp4                                                        //quita los arvhivos .mp4 del status
+
+git log --oneline --decorate --all --graph                             //muestra todos los cambias realizados
+
+λ git config --global alias.lg "log --oneline --decorate --all --graph"
+
+git lg
+
+git config --global alias.s "status -s -b" 
+
+git s                                                                   //indica en que rama se encuentra 
+
+git config --global -e                                                  //muestra la configuracion del git username alias etc 
+
+git status -s 
