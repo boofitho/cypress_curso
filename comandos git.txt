@@ -1,0 +1,16 @@
+git config --global user.name "Miguel"                                  //indicar quien esta trabajando 
+
+git config --global user.email "boof.alonzo@gmail.com"                  //parecido al anterior comando
+
+git init                                                                //iniciar instancia de GIT 
+
+git add .                                                               //agregar lo que no este en la instanca 
+
+git status                                                              //indica que se estara generando una copia
+
+git commit -m "inicio del proyecto"                                    //agregamos copia con etiqueta "inicio del proyecto"
+
+git commit -m "se agrego archivo comandos git.txt"                     //agregamos copia con etiqueta "se agrego archivo comandos git.txt" 
+                                                                       //siempre hacer el git add .
+                                                                       
+got log                                                                //indica todo lo que se ha realizado
