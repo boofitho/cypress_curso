@@ -1,0 +1,33 @@
+{
+    "plantilla cypress":{
+        "prefix":"c_plantilla_cypress",
+    "body":[
+            "cy.get('[${1:argumento}]').should('be.visible').type('${2:texto}')"
+        ],
+        "description": "plantilla_cypress"
+    },
+
+    "print to console":{
+        "prefix":"log",
+        "body":[
+            "console.log('$1');",
+            "$2"
+        ],
+        "description": "log output to console"
+    },
+
+    "Texto_Argumento":{
+        "prefix":"c_texto_argumentos",
+    "body":[
+            "cy.get('[${1:argumento}]').should('be.visible').type('${2:texto}')",
+            "cy.wait(tiempo)"
+        ],
+        "description": "Texto por argumentos"
+    }
+ 
+
+
+
+
+    
+}

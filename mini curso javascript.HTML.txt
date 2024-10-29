@@ -1,0 +1,32 @@
+mini curso javascript
+
+declarar variables
+let nombre="Miguel"                                                      //declarar variable con let 
+let apellido="Alonzo"                                                       
+console.log("bienvenidos al minicurso "+nombre)                          //muestra en colola lo que esta entre ""
+console.log("bienvenidos al minicurso "+nombre+" "-+apellido+...)
+
+variables numericas +,-,*,/
+let a=5             
+let b=8             
+let suma=a+b             
+let resta=a-b
+console.log("la suma es: "+suma)
+console.log("la resta es: "+resta)
+
+variable objeto
+let obj1={nom:'Miguel', ap:'Alonzo', ap2:'Lemus'}                          //variable objeto llamada obj1
+obj1.nom            mostrara Miguel
+obj1.ap             mostrara Alonzo 
+obj1.ap2            mostrara Lemus 
+console-log("Tu nombre es: "+obj1.nom+" "+obj1.ap+" "+obj1.ap2)
+
+let datos={a:5, b:10, c:15}                                                 //variable objeto llamada datos
+datos.a             mostrara 5
+datos.b             mostrara 10
+datos.c             mostrara 15
+let summa=datos.a+datos.b+datos.c       mostrara 60
+
+tipo de variable 
+typeof nombre_variable                                          //nos indica que tipo de variable es: numerica, string, obejto, etc
+

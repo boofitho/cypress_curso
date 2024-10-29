@@ -1,0 +1,38 @@
+curso cypress
+
+1. npm init                                                     //package.json
+
+2. npm install cypress --save-dev                               //instalacion
+
+3. node_modules\.bin\cypress open                               //abrir cypress 
+
+control + c                                                     //parar consola
+
+cy.log("hola mundo")                                            //mostrar en consola
+
+ cy.visit("https://demoqa.com/text-box")                        //visitar una pagina
+
+ 
+Cypress.on('uncaught:exception', (err, runnable) => {
+    return false                                                //antes del describe error cross origin
+    });   
+
+ elemento id se representa con #
+
+ elemento class se representa con .
+
+node_modules\.bin\cypress run                                   //corre en consola los test
+
+node_modules\.bin\cypress 
+
+node_modules\.bin\cypress run --headed                          //corre todos pero en el navegador 
+
+npx cypress run --browser chrome                                    //ejecuta chrome  
+
+node_modules\.bin\cypress run --spec "cypress\e2e\0- integratio\ chrome       //seleccionar un navegador  
+
+npx cypress run --spec "cypress\e2e\0_integration\seccion_1\0_hola_mundo.cy.js"    // ejecutar un test en especifico  
+
+npx cypress run --spec "cypress\e2e\0_integration\seccion_1\*"                        // ejecutar un folder completo en especifico 
+
+npx cypress run --spec "cypress\e2e\0_integration\seccion_6\1 pageObject_q.cy.js 

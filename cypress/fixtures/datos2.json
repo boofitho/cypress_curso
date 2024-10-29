@@ -1,0 +1,30 @@
+[
+    {
+        "nombre":"miguel",
+        "apellido":"alonzo",
+        "telefono": 3603927210,
+        "email":"miguel@gmail.com",
+        "direccion":"direccion 10 caracteres"
+    },
+    {
+        "nombre":"leonel",
+        "apellido":"messias",
+        "telefono": 1234567890,
+        "email":"leo@gmail.com",
+        "direccion":"miami 10 caracteres"
+    },
+    {
+        "nombre":"cristiano",
+        "apellido":"ronaldo",
+        "telefono": 9876543210,
+        "email":"siuuuu@gmail.com",
+        "direccion":"arabia 10 caracteres"
+    },
+    {
+        "nombre":"Lamine",
+        "apellido":"Yamal",
+        "telefono": 2610202419,
+        "email":"alexpadilla@gmail.com",
+        "direccion":"barcelona 10 caracteres"
+    }    
+]
