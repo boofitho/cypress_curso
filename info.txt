@@ -36,3 +36,9 @@ npx cypress run --spec "cypress\e2e\0_integration\seccion_1\0_hola_mundo.cy.js" 
 npx cypress run --spec "cypress\e2e\0_integration\seccion_1\*"                        // ejecutar un folder completo en especifico 
 
 npx cypress run --spec "cypress\e2e\0_integration\seccion_6\1 pageObject_q.cy.js 
+
+##############################################################################
+                        INTEGRACION CONTINUA
+##############################################################################
+
+npx cypress run --record --key bfaebdfa-022b-45b3-9fdb-59f99f97778d

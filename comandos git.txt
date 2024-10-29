@@ -29,14 +29,24 @@ git reset *.mp4                                                        //quita l
 
 git log --oneline --decorate --all --graph                             //muestra todos los cambias realizados
 
-λ git config --global alias.lg "log --oneline --decorate --all --graph"
+git config --global alias.lg "log --oneline --decorate --all --graph"  //creacion del alias "git lg"
 
-git lg
+git lg                                                                 //versión más concisa y visual del historial de commits
 
-git config --global alias.s "status -s -b" 
+git config --global alias.s "status -s -b"                             //creacion del alias "git s"
 
-git s                                                                   //indica en que rama se encuentra 
+git s                                                                  //indica en que rama se encuentra en formato abreviado 
 
-git config --global -e                                                  //muestra la configuracion del git username alias etc 
+git config --global -e                                                 //muestra la configuracion del git username alias etc 
 
-git status -s 
+git reset --soft [no.commit]                                           //deshace los commits, pero mantiene todos los cambios que se hayan hecho.
+
+git  reset --hard [no.commit]                                          //deshace los cammits, pero este no mantiene todos los cambias que se haya hecho.
+
+git reflog                                                             //permite ver el historial completo de tus acciones en Git.
+                                                                       //por si la carlitos tevez con el comando anterior 
+
+git push                                                               //para subir al repositorio luego del commit 
+
+git pull                                                               //actualizar el repositorio local con los últimos cambios del repositorio remoto
+
