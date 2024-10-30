@@ -12,7 +12,7 @@
   "license": "ISC",
   "devDependencies": {
     "@4tw/cypress-drag-drop": "^2.2.5",
-    "cypress": "^13.15.0",
+    "cypress": "^13.15.1",
     "cypress-cucumber-preprocessor": "^4.3.1",
     "cypress-file-upload": "^5.0.8",
     "cypress-mochawesome-reporter": "^3.8.2",
@@ -21,8 +21,7 @@
     "npx": "^10.2.2"
   },
   "dependencies": {
-    "cors": "^2.8.5",
-     "cypress": "^X.Y.Z"
+    "cors": "^2.8.5"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": false,
