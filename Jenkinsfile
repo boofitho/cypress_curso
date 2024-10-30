@@ -1,10 +1,12 @@
-pipeline{
+pipeline {
     agent any
-    tools {nodejs "Node"}
-    stages{
-        stage('Cypress Parallel Test Suite')
-            parallel{
-                stage('Slave 1'){
+    tools { 
+        nodejs "Node" 
+    }
+    stages {
+        stage('Cypress Parallel Test Suite') {
+            parallel {
+                stage('Slave 1') {
                     agent {
                         label "Agente_1"
                     }
@@ -15,7 +17,7 @@ pipeline{
                         bat 'npx cypress run --record --key bfaebdfa-022b-45b3-9fdb-59f99f97778d --parallel'
                     }
                 }
-                stage('Slave 2'){
+                stage('Slave 2') {
                     agent {
                         label "Agente_2"
                     }
@@ -26,7 +28,7 @@ pipeline{
                         bat 'npx cypress run --record --key bfaebdfa-022b-45b3-9fdb-59f99f97778d --parallel'
                     }
                 }
-                stage('Slave 3'){
+                stage('Slave 3') {
                     agent {
                         label "Agente_3"
                     }
@@ -37,9 +39,7 @@ pipeline{
                         bat 'npx cypress run --record --key bfaebdfa-022b-45b3-9fdb-59f99f97778d --parallel'
                     }
                 }
-
-        
-        }
-
-    }
-}
+            } // Cierre de parallel
+        } // Cierre de Cypress Parallel Test Suite
+    } // Cierre de stages
+} // Cierre de pipeline
