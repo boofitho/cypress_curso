@@ -37,6 +37,7 @@ pipeline{
                         bat 'npx cypress run --record --key bfaebdfa-022b-45b3-9fdb-59f99f97778d --parallel'
                     }
                 }
+
         
         }
 
