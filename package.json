@@ -21,7 +21,8 @@
     "npx": "^10.2.2"
   },
   "dependencies": {
-    "cors": "^2.8.5"
+    "cors": "^2.8.5",
+     "cypress": "^X.Y.Z"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": false,

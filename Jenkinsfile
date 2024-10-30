@@ -21,8 +21,10 @@ pipeline {
                     steps {
                         git url: 'https://github.com/boofitho/paralelo_pipeline.git'
                         bat 'npm install'
+                        bat 'dir node_modules\\.bin'
                         bat 'npm update'
                         bat 'npx cypress run --record --key bfaebdfa-022b-45b3-9fdb-59f99f97778d --parallel'
+                        
                     }
                 }
                 stage('Slave 2') {
@@ -32,6 +34,7 @@ pipeline {
                     steps {
                         git url: 'https://github.com/boofitho/paralelo_pipeline.git'
                         bat 'npm install'
+                        bat 'dir node_modules\\.bin'
                         bat 'npm update'
                         bat 'npx cypress run --record --key bfaebdfa-022b-45b3-9fdb-59f99f97778d --parallel'
                     }
@@ -43,6 +46,7 @@ pipeline {
                     steps {
                         git url: 'https://github.com/boofitho/paralelo_pipeline.git'
                         bat 'npm install'
+                        bat 'dir node_modules\\.bin'
                         bat 'npm update'
                         bat 'npx cypress run --record --key bfaebdfa-022b-45b3-9fdb-59f99f97778d --parallel'
                     }
