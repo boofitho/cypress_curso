@@ -9,7 +9,6 @@ pipeline {
                 bat 'echo %PATH%'
                 bat 'npm -v'  
                 bat 'npx -v'  
-                bat 'cypress -v' || echo "Cypress no instalado"
             }
         }
         stage('Cypress Parallel Test Suite') {
