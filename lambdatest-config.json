@@ -1,0 +1,38 @@
+{
+   "lambdatest_auth": {
+      "username": "boof.alonzo",
+      "access_key": "0UGsH71r3u2QJlavVSG4yln7uQuqGmiaWuoIkmggKcAPFGm4dY"
+   },
+   "browsers": [
+      {
+         "browser": "Chrome",
+         "platform": "Windows 10",
+         "versions": [
+            "latest-1"
+         ]
+      },
+      {
+         "browser": "Firefox",
+         "platform": "Windows 10",
+         "versions": [
+            "latest-1"
+         ]
+      }
+   ],
+   "run_settings": {
+      "reporter_config_file": "base_reporter_config.json",
+      "build_name": "test_lambda2",
+      "parallels": 3,
+      "specs": "cypress/e2e/0_integration/testlamb/*",
+      "ignore_files": "",
+      "network": false,
+      "headless": false,
+      "npm_dependencies": {
+         "cypress": "^13.15.1"
+      }
+   },
+   "tunnel_settings": {
+      "tunnel": false,
+      "tunnel_name": null
+   }
+}

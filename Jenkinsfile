@@ -16,6 +16,7 @@ pipeline {
                 stage('Slave 1') {
                     agent { label "Agente_1" }
                     steps {
+                        git branch: 'main'
                         git url: 'https://github.com/boofitho/cypress_curso.git'
                         bat 'npm install'
                         bat 'npm install cypress --save-dev'
@@ -26,6 +27,7 @@ pipeline {
                 stage('Slave 2') {
                     agent { label "Agente_2" }
                     steps {
+                        git branch: 'main'
                         git url: 'https://github.com/boofitho/cypress_curso.git'
                         bat 'npm install'
                         bat 'npm install cypress --save-dev'
@@ -36,6 +38,7 @@ pipeline {
                 stage('Slave 3') {
                     agent { label "Agente_3" }
                     steps {
+                        git branch: 'main'
                         git url: 'https://github.com/boofitho/cypress_curso.git'
                         bat 'npm install'
                         bat 'npm install cypress --save-dev'
@@ -47,3 +50,79 @@ pipeline {
         } // Cierre de Cypress Parallel Test Suite
     } // Cierre de stages
 } // Cierre de pipeline
+
+
+// pipeline {
+//     agent any
+
+//     tools {nodejs "node"}
+
+//     stages {
+
+//         stage('Cypress Parallel Test Suite') {
+//             parallel {
+//                 stage('Slave 1') {
+//                     agent {
+//                         label "Agent2_1"
+//                     }
+//                     steps {
+//                         git url: 'https://github.com/RodrigoUdemy/Paralelo_pipline.git'
+//                         bat 'npm install'
+//                         bat 'npm update'                       
+//                         bat 'npx cypress run cypress run --record --key 7f3ad08e-6c6e-442f-bcbd-cb3269ac5a9c  --parallel'
+                    
+//                     }
+//                 }
+
+//                 stage('Slave 2') {
+//                     agent {
+//                         label "Agent2_2"
+//                     }
+//                     steps {
+//                         git url: 'https://github.com/RodrigoUdemy/Paralelo_pipline.git'
+//                         bat 'npm install'
+//                         bat 'npm update'                       
+//                         bat 'npx cypress run cypress run --record --key 7f3ad08e-6c6e-442f-bcbd-cb3269ac5a9c  --parallel'
+                    
+//                     }
+//                 }
+
+//                 stage('Slave 3') {
+//                     agent {
+//                         label "Agent2_3"
+//                     }
+//                     steps {
+//                         git url: 'https://github.com/RodrigoUdemy/Paralelo_pipline.git'
+//                         bat 'npm install'
+//                         bat 'npm update'                       
+//                         bat 'npx cypress run cypress run --record --key 7f3ad08e-6c6e-442f-bcbd-cb3269ac5a9c  --parallel'
+                    
+//                     }
+//                 }
+
+//                 stage('Slave 4') {
+//                     agent {
+//                         label "Agent2_4"
+//                     }
+//                     steps {
+//                         git url: 'https://github.com/RodrigoUdemy/Paralelo_pipline.git'
+//                         bat 'npm install'
+//                         bat 'npm update'                       
+//                         bat 'npx cypress run cypress run --record --key 7f3ad08e-6c6e-442f-bcbd-cb3269ac5a9c  --parallel'
+                    
+//                     }
+//                 }
+
+               
+
+                
+   
+                  
+//             }
+
+             
+//         }
+
+//     }
+            
+// }
