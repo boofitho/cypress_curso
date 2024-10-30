@@ -4,6 +4,14 @@ pipeline {
         nodejs "Node" 
     }
     stages {
+        stage('Debug PATH') {
+            steps {
+                bat 'echo %PATH%'
+                bat 'npm -v'  
+                bat 'npx -v'  
+                bat 'cypress -v'  
+            }
+        }
         stage('Cypress Parallel Test Suite') {
             parallel {
                 stage('Slave 1') {
