@@ -34,7 +34,7 @@ Cypress.on('uncaught:exception', (err, runnable) => {
             ]
         }
 
-        cy.log(datos.Nombre)
+         cy.log(datos.Nombre)
         cy.log(datos.ApellidoP)
         cy.log(datos.ApellidoM)
         cy.log(datos.Telefono)

@@ -10,7 +10,7 @@ Cypress.on('uncaught:exception', (err, runnable) => {
 
     describe("Test Api POST", () =>{
 
-    it("Test Api get metodo 2 ",()=>{
+    it("Test Api post metodo 2 ",()=>{
         for(let x=1; x<=10; x++){
             let tx=Math.random().toString(10)
             cy.request({

@@ -22,7 +22,5 @@ Cypress.on('uncaught:exception', (err, runnable) => {
         datos=cy.request("http://localhost:3000/posts").should((Response)=>{
             expect(Response.status).to.eq(200)
         })
-
-        
     })
 })// cierre describe

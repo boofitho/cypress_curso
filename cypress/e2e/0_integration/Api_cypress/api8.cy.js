@@ -18,7 +18,7 @@ Cypress.on('uncaught:exception', (err, runnable) => {
     //         expect(response.status).to.eql(200)
     //     })
     // })
-    it.only("Test Api delete metodo 2 ",()=>{
+    it.only("Test Api delete varios ",()=>{
         for(let x=9; x<=15; x++)
         {
         cy.request({

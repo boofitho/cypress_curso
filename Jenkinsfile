@@ -16,8 +16,7 @@ pipeline {
                 stage('Slave 1') {
                     agent { label "Agente_1" }
                     steps {
-                        git branch: 'main',
-                            git url: 'https://github.com/boofitho/cypress_curso.git'
+                        git url: 'https://github.com/boofitho/cypress_curso.git'
                         bat 'npm install'
                         bat 'npm install cypress --save-dev'
                         bat 'dir node_modules\\.bin'
